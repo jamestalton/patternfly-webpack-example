@@ -1,0 +1,10 @@
+[
+    {
+        "type": "console.navigation/section",
+        "properties": {
+            "id": "admin-demo-section",
+            "perspective": "admin",
+            "name": "Demo Plugin"
+        }
+    }
+]
