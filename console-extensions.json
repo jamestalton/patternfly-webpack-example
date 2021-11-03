@@ -2,19 +2,19 @@
     {
         "type": "console.navigation/section",
         "properties": {
-            "id": "demo-section",
+            "id": "example-section",
             "perspective": "admin",
-            "name": "Demo Section"
+            "name": "Example Section"
         }
     },
     {
         "type": "console.navigation/href",
         "properties": {
-            "id": "demo-href",
+            "id": "example-href",
             "perspective": "admin",
-            "section": "demo-section",
-            "name": "Demo HRef",
-            "href": "/demo"
+            "section": "example-section",
+            "name": "Example",
+            "href": "/example"
         },
         "flags": {
             "required": ["OPENSHIFT"]
@@ -23,8 +23,8 @@
     {
         "type": "console.page/route",
         "properties": {
-            "path": "/demo",
-            "component": { "$codeRef": "app.default" }
+            "path": "/example",
+            "component": { "$codeRef": "example.default" }
         }
     }
 ]
