@@ -2,9 +2,29 @@
     {
         "type": "console.navigation/section",
         "properties": {
-            "id": "admin-demo-section",
+            "id": "demo-section",
             "perspective": "admin",
-            "name": "Demo Plugin"
+            "name": "Demo Section"
+        }
+    },
+    {
+        "type": "console.navigation/href",
+        "properties": {
+            "id": "demo-href",
+            "perspective": "admin",
+            "section": "demo-section",
+            "name": "Demo HRef",
+            "href": "/demo"
+        },
+        "flags": {
+            "required": ["OPENSHIFT"]
+        }
+    },
+    {
+        "type": "console.page/route",
+        "properties": {
+            "path": "/demo",
+            "component": { "$codeRef": "app.default" }
         }
     }
 ]
