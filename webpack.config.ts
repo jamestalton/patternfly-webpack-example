@@ -1,12 +1,12 @@
 /* eslint-disable i18next/no-literal-string */
+import { ConsoleRemotePlugin } from '@openshift-console/dynamic-plugin-sdk-webpack'
 import ReactRefreshWebpackPlugin from '@pmmmwh/react-refresh-webpack-plugin'
 import CompressionPlugin from 'compression-webpack-plugin'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
+import * as path from 'path'
 import ReactRefreshTypeScript from 'react-refresh-typescript'
 import webpack from 'webpack'
 import { Configuration as DevServerConfiguration } from 'webpack-dev-server'
-import * as path from 'path'
-import { ConsoleRemotePlugin } from '@openshift-console/dynamic-plugin-sdk-webpack'
 
 module.exports = function (_env: unknown, argv: { hot: boolean; mode: string | undefined }) {
     const isProduction = argv.mode === 'production' || argv.mode === undefined
